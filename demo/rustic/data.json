@@ -1,0 +1,20 @@
+{
+  "mempelaiPria": {
+    "namaLengkap": "Baskoro Adi, S.T",
+    "namaPanggilan": "Baskoro",
+    "putraDari": "Putra kedua dari Bapak Triyono & Ibu Sri Utami"
+  },
+  "mempelaiWanita": {
+    "namaLengkap": "Citra Lestari, S.Ds",
+    "namaPanggilan": "Citra",
+    "putriDari": "Putri bungsu dari Bapak Hidayat & Ibu Rahmawati"
+  },
+  "acara": {
+    "tanggal": "Sabtu, 10 Oktober 2026",
+    "jamAkad": "09.00 - 11.00 WIB",
+    "jamResepsi": "12.00 - 16.00 WIB",
+    "lokasi": "Kahyangan Ballroom & Garden",
+    "alamat": "Jl. Merapi No. 88, Purwakarta",
+    "mapsUrl": "https://maps.google.com"
+  }
+}
