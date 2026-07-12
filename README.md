@@ -25,7 +25,7 @@ Selamat datang di **RN-Digitals**! Kami menyediakan layanan pembuatan undangan p
 Silakan klik link di bawah ini untuk melihat contoh tampilan undangan (buka lewat HP untuk tampilan terbaik):
 
 
-*   👉 **[LIHAT DEMO: Sage Minimalist](https://rn-digitals.github.io/RN-Digitals/demo/sage/)** *(Modern, Clean & Fresh)*
+*   👉 **[LIHAT DEMO: Sage Minimalist](https://rn-digitals.github.io/rn-digitals//demo/sage/)** *(Modern, Clean & Fresh)*
 
 ---
 
