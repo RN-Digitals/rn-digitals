@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan - Royal Navy & Gold</title>
+    
+    <!-- Google Fonts untuk kesan Mewah, Formal & Melinuk Indah -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Pinyon+Script&family=Prata&display=swap" rel="stylesheet">
+
+    <style>
+        /* Pilihan Warna Tema Royal Navy & Gold */
+        :root {
+            --bg-navy: #0b132b;
+            --card-navy: #1c2541;
+            --gold-light: #f4d068;
+            --gold-dark: #d4af37;
+            --text-white: #ffffff;
+            --text-gold: #f4d068;
+            --text-muted: #a5adbb;
+        }
+
+        body {
+            font-family: 'Prata', serif;
+            background-color: #050a18;
+            color: var(--text-white);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 450px;
+            background-color: var(--bg-navy);
+            min-height: 100vh;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            border: 2px solid var(--gold-dark);
+            box-sizing: border-box;
+        }
+
+        /* Hero / Cover Section */
+        .hero {
+            padding: 90px 20px 70px 20px;
+            text-align: center;
+            background: radial-gradient(circle, #1c2541 0%, #0b132b 100%);
+            border-bottom: 1px solid var(--gold-dark);
+            position: relative;
+        }
+
+        /* Bingkai Ornamen Emas Sudut Lembut */
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 15px;
+            bottom: 15px;
+            left: 15px;
+            right: 15px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            pointer-events: none;
+        }
+
+        .hero p {
+            font-family: 'Cinzel', serif;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: var(--gold-light);
+            margin-bottom: 10px;
+        }
+
+        .hero .script-text {
+            font-family: 'Pinyon Script', cursive;
+            font-size: 55px;
+            color: var(--gold-light);
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .hero h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 26px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            color: var(--text-white);
+            margin: 20px 0 10px 0;
+        }
+
+        /* Section Mempelai */
+        .mempelai-section {
+            padding: 60px 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .mempelai-box h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-gold);
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .mempelai-box p {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 5px;
+            line-height: 1.6;
+        }
+
+        .ampersand {
+            font-family: 'Pinyon Script', cursive;
+            font-size: 45px;
+            color: var(--gold-dark);
+            margin: 15px 0;
+        }
+
+        /* Section Acara */
+        .acara-section {
+            padding: 10px 30px 60px 30px;
+            text-align: center;
+        }
+
+        .acara-section h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 22px;
+            color: var(--text-white);
+            margin-bottom: 30px;
+            letter-spacing: 3px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            padding-bottom: 10px;
+        }
+
+        .card-acara {
+            background: var(--card-navy);
+            padding: 25px 20px;
+            border-radius: 0px; /* Sudut tajam untuk kesan formal */
+            margin-bottom: 25px;
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .card-acara h4 {
+            margin: 0 0 15px 0;
+            color: var(--text-gold);
+            font-family: 'Cinzel', serif;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 3px;
+        }
+
+        .card-acara p {
+            font-size: 14px;
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+
+        /* Button Peta Royal */
+        .btn-maps {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold-dark) 100%);
+            color: var(--bg-navy);
+            padding: 13px 35px;
+            text-decoration: none;
+            border-radius: 0px;
+            font-family: 'Cinzel', serif;
+            font-size: 12px;
+            font-weight: 700;
+            margin-top: 15px;
+            letter-spacing: 2px;
+            transition: 0.4s;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-maps:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 10px;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- HERO COVER -->
+        <section class="hero">
+            <p>The Wedding of</p>
+            <div class="script-text">A & A</div>
+            <h1 id="title-nama">Loading...</h1>
+            <p id="title-tanggal" style="margin-top: 25px; font-weight: 400; color: var(--text-gold); letter-spacing: 2px; text-transform: none; font-size: 14px;"></p>
+        </section>
+
+        <!-- DATA MEMPELAI -->
+        <section class="mempelai-section">
+            <div class="mempelai-box">
+                <h2 id="pria-nama">Mempelai Pria</h2>
+                <p id="pria-ortu">-</p>
+            </div>
+            
+            <div class="ampersand">&</div>
+            
+            <div class="mempelai-box">
+                <h2 id="wanita-nama">Mempelai Wanita</h2>
+                <p id="wanita-ortu">-</p>
+            </div>
+        </section>
+
+        <!-- DETAIL ACARA -->
+        <section class="acara-section">
+            <h3>SAVE THE DATE</h3>
+            
+            <div class="card-acara">
+                <h4>AKAD NIKAH</h4>
+                <p id="acara-jam-akad">-</p>
+            </div>
+
+            <div class="card-acara">
+                <h4>RESEPSI PERNIKAHAN</h4>
+                <p id="acara-jam-resepsi">-</p>
+            </div>
+
+            <div class="card-acara">
+                <h4>TEMPAT PELAKSANAAN</h4>
+                <p><strong id="acara-lokasi" style="font-size: 16px; color: var(--text-gold); font-family: 'Cinzel', serif;">-</strong></p>
+                <p id="acara-alamat" style="color: var(--text-muted); font-size: 13px;">-</p>
+                <a id="link-maps" href="#" target="_blank" class="btn-maps">OPEN GOOGLE MAPS</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>RN-DIGITALS EXCLUSIVE COLLECTION</p>
+        </footer>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('title-nama').innerText = `${data.mempelaiPria.namaPanggilan} & ${data.mempelaiWanita.namaPanggilan}`;
+                document.getElementById('title-tanggal').innerText = data.acara.tanggal;
+
+                document.getElementById('pria-nama').innerText = data.mempelaiPria.namaLengkap;
+                document.getElementById('pria-ortu').innerText = data.mempelaiPria.putraDari;
+
+                document.getElementById('wanita-nama').innerText = data.mempelaiWanita.namaLengkap;
+                document.getElementById('wanita-ortu').innerText = data.mempelaiWanita.putriDari;
+
+                document.getElementById('acara-jam-akad').innerText = data.acara.jamAkad;
+                document.getElementById('acara-jam-resepsi').innerText = data.acara.jamResepsi;
+                document.getElementById('acara-lokasi').innerText = data.acara.lokasi;
+                document.getElementById('acara-alamat').innerText = data.acara.alamat;
+                
+                document.getElementById('link-maps').href = data.acara.mapsUrl;
+            })
+            .catch(error => console.error('Gagal mengambil data undangan:', error));
+    </script>
+</body>
+</html>
