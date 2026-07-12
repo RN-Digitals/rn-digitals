@@ -1,0 +1,21 @@
+{
+  "mempelaiPria": {
+    "namaLengkap": "Raden Mas Agung Wibowo, S.H",
+    "namaPanggilan": "Agung",
+    "putraDari": "Putra pertama dari Bapak Ir. H. Hermawan & Ibu Hj. Ratna Ningsih"
+  },
+  "mempelaiWanita": {
+    "namaLengkap": "Roro Anindya Putri, M.B.A",
+    "namaPanggilan": "Anin",
+    "putriDari": "Putri kedua dari Bapak Dr. Sugeng Rahardjo & Ibu Retno Wilis"
+  },
+  "acara": {
+    "tanggal": "Sabtu, 21 November 2026",
+    "jamAkad": "08.00 - 10.00 WIB",
+    "jamResepsi": "11.00 - 15.00 WIB",
+    "lokasi": "Grand Ballroom Hotel Majestic",
+    "alamat": "Jl. Jenderal Sudirman No. 1, Purwakarta",
+    "mapsUrl": "https://maps.google.com"
+  }
+}
+
