@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan - Warm Rustic</title>
+    
+    <!-- Google Fonts untuk kesan Rustic & Aesthetic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+
+    <style>
+        /* Pilihan Warna Tema Warm Rustic */
+        :root {
+            --bg-rustic: #fdfaf6;
+            --cream-light: #f5ebe0;
+            --terracotta: #cd7f5e;
+            --brown-dark: #4a3b32;
+            --text-muted: #7a685c;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Lora', serif;
+            background-color: var(--cream-light);
+            color: var(--brown-dark);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 450px;
+            background-color: var(--bg-rustic);
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(74, 59, 50, 0.1);
+        }
+
+        /* Hero / Cover Section */
+        .hero {
+            padding: 80px 20px 60px 20px;
+            text-align: center;
+            background-color: #f7ede2;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            position: relative;
+        }
+
+        /* Aksen lingkaran estetik ala rustic */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 80px;
+            border: 1px dashed var(--terracotta);
+            border-radius: 50%;
+            opacity: 0.4;
+        }
+
+        .hero p {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: var(--terracotta);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 46px;
+            font-weight: 400;
+            color: var(--brown-dark);
+            margin: 15px 0;
+            font-style: italic;
+        }
+
+        /* Section Mempelai */
+        .mempelai-section {
+            padding: 50px 30px;
+            text-align: center;
+        }
+
+        .mempelai-box h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 32px;
+            font-weight: 600;
+            color: var(--brown-dark);
+            margin-bottom: 5px;
+        }
+
+        .mempelai-box p {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        .ampersand {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 36px;
+            color: var(--terracotta);
+            margin: 25px 0;
+        }
+
+        /* Section Acara */
+        .acara-section {
+            padding: 20px 30px 50px 30px;
+            text-align: center;
+        }
+
+        .acara-section h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 26px;
+            color: var(--brown-dark);
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        .card-acara {
+            background: var(--white);
+            padding: 25px 20px;
+            border-radius: 4px;
+            margin-bottom: 25px;
+            border-left: 4px solid var(--terracotta);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+        }
+
+        .card-acara h4 {
+            margin: 0 0 10px 0;
+            color: var(--terracotta);
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+
+        .card-acara p {
+            font-size: 14px;
+            margin: 6px 0;
+            line-height: 1.5;
+        }
+
+        /* Button Peta Rustic */
+        .btn-maps {
+            display: inline-block;
+            background-color: var(--brown-dark);
+            color: var(--bg-rustic);
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-top: 15px;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .btn-maps:hover {
+            background-color: var(--terracotta);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 11px;
+            color: var(--text-muted);
+            border-top: 1px solid var(--cream-light);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- HERO COVER -->
+        <section class="hero">
+            <p>The Wedding Celebration</p>
+            <h1 id="title-nama">Loading...</h1>
+            <p id="title-tanggal" style="margin-top: 25px; font-weight: 400; font-style: italic; text-transform: none; letter-spacing: 1px; color: var(--brown-dark);"></p>
+        </section>
+
+        <!-- DATA MEMPELAI -->
+        <section class="mempelai-section">
+            <div class="mempelai-box">
+                <h2 id="pria-nama">Mempelai Pria</h2>
+                <p id="pria-ortu">-</p>
+            </div>
+            
+            <div class="ampersand">and</div>
+            
+            <div class="mempelai-box">
+                <h2 id="wanita-nama">Mempelai Wanita</h2>
+                <p id="wanita-ortu">-</p>
+            </div>
+        </section>
+
+        <!-- DETAIL ACARA -->
+        <section class="acara-section">
+            <h3>The Wedding Event</h3>
+            
+            <div class="card-acara">
+                <h4>Akad Nikah</h4>
+                <p id="acara-jam-akad">-</p>
+            </div>
+
+            <div class="card-acara">
+                <h4>Resepsi</h4>
+                <p id="acara-jam-resepsi">-</p>
+            </div>
+
+            <div class="card-acara">
+                <h4>Tempat Pelaksanaan</h4>
+                <p><strong id="acara-lokasi" style="font-size: 16px;">-</strong></p>
+                <p id="acara-alamat" style="color: var(--text-muted);">-</p>
+                <a id="link-maps" href="#" target="_blank" class="btn-maps">VIEW ON GOOGLE MAPS</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>RN-Digitals Wedding Invitation</p>
+        </footer>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('title-nama').innerText = `${data.mempelaiPria.namaPanggilan} & ${data.mempelaiWanita.namaPanggilan}`;
+                document.getElementById('title-tanggal').innerText = data.acara.tanggal;
+
+                document.getElementById('pria-nama').innerText = data.mempelaiPria.namaLengkap;
+                document.getElementById('pria-ortu').innerText = data.mempelaiPria.putraDari;
+
+                document.getElementById('wanita-nama').innerText = data.mempelaiWanita.namaLengkap;
+                document.getElementById('wanita-ortu').innerText = data.mempelaiWanita.putriDari;
+
+                document.getElementById('acara-jam-akad').innerText = data.acara.jamAkad;
+                document.getElementById('acara-jam-resepsi').innerText = data.acara.jamResepsi;
+                document.getElementById('acara-lokasi').innerText = data.acara.lokasi;
+                document.getElementById('acara-alamat').innerText = data.acara.alamat;
+                
+                document.getElementById('link-maps').href = data.acara.mapsUrl;
+            })
+            .catch(error => console.error('Gagal mengambil data undangan:', error));
+    </script>
+</body>
+</html>
